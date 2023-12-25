@@ -20,7 +20,7 @@ async function connectDataBase() {
   try {
     await client.connect()
     const result = await client.query('SELECT NOW()')
-    console.log('-----------------', result.rows[0])
+    console.log('CONECTED --->', result.rows[0])
   } catch (error) {
     console.error('Error al conectar o consultar la base de datos:', error)
     process.exit(1)
