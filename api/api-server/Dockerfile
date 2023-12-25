@@ -8,8 +8,6 @@ RUN npm install
 
 COPY . ./
 
-ENV DB_HOST=postgres
-
 RUN npm run build
 
 EXPOSE 5005
